@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 50px;
    margin-left: 70px;
     
 }
@@ -23,7 +23,7 @@ body {
 }
 .right {
      text-align: right ;
-     margin-bottom: 40px;
+     margin-bottom: 20px;
      margin-right: 70px;
 }
 
