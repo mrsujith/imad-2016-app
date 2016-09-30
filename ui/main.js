@@ -5,4 +5,4 @@ img.onclick = function () {
     {
     img.style.marginLeft = x + 'px' ;
     }
-}
+};
