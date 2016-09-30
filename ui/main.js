@@ -5,7 +5,8 @@ var pos = 0;
 var moveright = function () {
      pos = pos + 5 ;
      img.style.marginLeft = pos + 'px' ;
-}
+};
+
 img.onclick = function () {
    
     
