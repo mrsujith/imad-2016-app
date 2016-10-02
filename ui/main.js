@@ -22,11 +22,11 @@ img.onclick = function () {
 
 
 
-var Art1 = document.getElementById ('Art1');
+var Art = document.getElementById ('Art1');
 
 var art11 = 0 ;
 
-Art1.onclick = function () {
+Art.onclick = function () {
    
          art11 = art11 + 1 ;
          
