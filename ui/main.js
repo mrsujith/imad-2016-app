@@ -20,7 +20,7 @@ img.onclick = function () {
         var interval = setInterval (moveright,20) ;
 };
 
-var Art1 = document.getElementById ("Art1");
+var Art1 = document.getElementById ('Art1');
 
 var art11 = 0 ;
 
@@ -28,7 +28,7 @@ Art1.onclick = function () {
    
          art11 = art11 + 1 ;
          
-         var span = document.getElementById("count1") ;
+         var span = document.getElementById('count1') ;
          
          span.innerHTML = art11.toString();
          
