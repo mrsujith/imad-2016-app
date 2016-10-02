@@ -3,7 +3,7 @@ var img = document.getElementById ('madi');
 var pos = 0;
 
 var moveright = function () {
-    if (pos < 300 ) {
+    if (pos < 100 ) {
         pos = pos + 5 ;
      img.style.marginLeft = pos + 'px' ;
     }
