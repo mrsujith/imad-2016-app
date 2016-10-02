@@ -1,17 +1,16 @@
-var Art = document.getElementById ('Art1');
+var button = document.getElementById('counter');
 
-var art11 = 0 ;
+var counter = 0 ;
 
-Art.onclick = function () {
+button.onclick = function () {
    
-         art11 = art11 + 1 ;
+         counter = counter + 1 ;
          
-         var span = document.getElementById('count1') ;
+         var span = document.getElementById('count') ;
          
-         span.innerHTML = art11.toString();
+         span.innerHTML = counter.toString();
          
-         
-};
+    };
 
 
 console.log('Loaded!');
