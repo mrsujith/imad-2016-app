@@ -1,9 +1,9 @@
 console.log('Loaded!');
 var img = document.getElementById ('madi');
-var pos = 1;
+var pos = 2;
 var x = 2 ;
 var moveright = function () {
-    if (-200 < pos < 200 ) {
+    if (0 < pos < 100 ) {
         pos = pos + x ;
      img.style.marginLeft = pos + 'px' ;
     }
