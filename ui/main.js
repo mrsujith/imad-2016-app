@@ -8,7 +8,7 @@ var moveright = function () {
      img.style.marginLeft = pos + 'px' ;
     }
     else {
-        x = -2 ;
+        x = - x ;
         pos = pos+ x ;
     }
     
