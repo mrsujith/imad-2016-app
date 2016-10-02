@@ -1,5 +1,21 @@
+var Art = document.getElementById ('Art1');
+
+var art11 = 0 ;
+
+Art.onclick = function () {
+   
+         art11 = art11 + 1 ;
+         
+         var span = document.getElementById('count1') ;
+         
+         span.innerHTML = art11.toString();
+         
+         
+};
+
+
 console.log('Loaded!');
-var img = document.getElementById ('madi');
+/* var img = document.getElementById ('madi');
 var pos = 2;
 var x = 2 ;
 var moveright = function () {
@@ -18,21 +34,7 @@ var moveright = function () {
 img.onclick = function () {
    
         var interval = setInterval (moveright,20) ;
-};
+}; */
 
 
 
-var Art = document.getElementById ('Art1');
-
-var art11 = 0 ;
-
-Art.onclick = function () {
-   
-         art11 = art11 + 1 ;
-         
-         var span = document.getElementById('count1') ;
-         
-         span.innerHTML = art11.toString();
-         
-         
-};
