@@ -1,15 +1,15 @@
 console.log('Loaded!');
 var img = document.getElementById ('madi');
-var pos = 0;
+var pos = 1;
 var x = 2 ;
 var moveright = function () {
-    if (pos < 200 ) {
+    if (-200 < pos < 200 ) {
         pos = pos + x ;
      img.style.marginLeft = pos + 'px' ;
     }
     else {
-        x = -2 ;
-        pos = pos - 2 ;
+        x = -1 * x ;
+        pos = pos+ x ;
     }
     
 };
