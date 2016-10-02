@@ -22,15 +22,11 @@ img.onclick = function () {
 
 var Art1 = document.getElementById ('Art1');
 
-var Art2 = document.getElementById ('Art2');
-
-var Art3 = document.getElementById ('Art3');
-
 var art11 = 0 ;
 
 Art1.onclick = function () {
    
-         art11 = art11++ ;
+         art11 = art11 + 1 ;
          
          var span = document.getElementById("count1") ;
          
