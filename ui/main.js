@@ -13,8 +13,8 @@ button.onclick = function () {
     };
 
 
-console.log('Loaded!');
-/* var img = document.getElementById ('madi');
+/* console.log('Loaded!');
+ var img = document.getElementById ('madi');
 var pos = 2;
 var x = 2 ;
 var moveright = function () {
