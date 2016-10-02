@@ -4,7 +4,7 @@ var pos = 0;
 
 var moveright = function () {
     if (pos < 200 ) {
-        pos = pos + 1 ;
+        pos = pos + 2 ;
      img.style.marginLeft = pos + 'px' ;
     }
     else {
