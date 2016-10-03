@@ -8,7 +8,7 @@ button.onclick = function () {
          
          var span = document.getElementById('count1') ;
          
-         span.innerHTML = aone.toString();
+         span.innerHTML = counter.toString();
          
     };
 
