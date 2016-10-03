@@ -13,7 +13,7 @@ button.onclick = function () {
     };
 
 
-/* console.log('Loaded!');
+console.log('Loaded!');
  var img = document.getElementById ('madi');
 var pos = 2;
 var x = 2 ;
@@ -33,7 +33,7 @@ var moveright = function () {
 img.onclick = function () {
    
         var interval = setInterval (moveright,20) ;
-}; */
+}; 
 
 
 
