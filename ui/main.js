@@ -8,7 +8,9 @@ button.onclick = function () {
          
          var span = document.getElementById('count1') ;
          
-         span.innerHTML = counter.toString();
+         localStore.getItem(aonetag);
+         
+         span.innerHTML = aonetag.toString();
          
     };
 
