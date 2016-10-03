@@ -9,9 +9,13 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var aone = 0 ;
+   var aone = 0 ;
+
+ localStorage.setItem(aonetag,aone);
+
+
 app.get('/article-one', function (req, res) {
-    localStorage.setItem(aonetag,aone);
+   
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
   
 });
