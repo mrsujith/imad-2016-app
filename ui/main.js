@@ -4,7 +4,7 @@ var counter = 0 ;
 
 button.onclick = function () {
    
-         counter = counter ++ ;
+         counter = counter++ ;
          
          var span = document.getElementById('count1') ;
          
