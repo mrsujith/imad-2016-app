@@ -10,9 +10,10 @@ app.get('/', function (req, res) {
 });
 
 var aone = 0 ;
-app.get('/article-one', function (req, res) {
+app.get('/article-one', function (req, res1 ,res2) {
     aone = aone + 1 ;
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res1.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res2(aone) ;
 });
 
 app.get('/article-two', function (req, res) {
