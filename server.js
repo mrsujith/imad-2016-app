@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 var aone = 0 ;
 app.get('/article-one', function (req, res) {
-    aone = aone + 1 ;
+    localStorage.setItem(aonetag,aone);
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
   
 });
