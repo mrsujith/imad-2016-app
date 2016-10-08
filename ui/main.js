@@ -1,3 +1,13 @@
+var button1 = document.getElementById('counter1');
+
+var counter11 = 0 ;
+
+button1.onclick = function () {
+         counter11 = counter11 + 1 ;
+         var span1 = document.getElementById('count1') ;
+         span1.innerHTML = counter11.toString();
+     };
+
 
 
 var button = document.getElementById('counter');
@@ -44,16 +54,6 @@ var moveright = function () {
 img.onclick = function () {
         var interval = setInterval (moveright,20) ;
 }; 
-
-var button1 = document.getElementById('counter1');
-
-var counter11 = 0 ;
-
-button1.onclick = function () {
-         counter11 = counter11 + 1 ;
-         var span1 = document.getElementById('count1') ;
-         span1.innerHTML = counter11.toString();
-     };
 
 
 
