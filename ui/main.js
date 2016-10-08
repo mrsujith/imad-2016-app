@@ -22,15 +22,17 @@ var button = document.getElementById('counter');
               var count = response.responseText();
               var span = document.getElementById('count');
               span.innerHtml = count.toString();
-           }
+                                        }
            
-       }
+                                                        }
        
-   };
+                                                };
    
      
-     
- };
+     response.open(GET,'http://mrsujith.imad.hasura-app.io/counter',true);
+     response.send(null);
+                                };
+                                
 
 
 
