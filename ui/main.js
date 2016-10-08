@@ -29,7 +29,7 @@ var button = document.getElementById('counter');
                                                 };
    
      
-     response.open(GET,'http://mrsujith.imad.hasura-app.io/counter',true);
+     response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
      response.send(null);
                                 };
                                 
