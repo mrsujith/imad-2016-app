@@ -12,10 +12,9 @@ var button = document.getElementById('counter');
               var span = document.getElementById('count');
               span.innerHTML = count11.toString();
                                         }
-           
-                                                        }
+                                                         }
        
-                                                };
+                                               };
    
      
      response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
