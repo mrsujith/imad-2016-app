@@ -35,6 +35,7 @@ app.get('/ui/justfocus.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'justfocus.png'));
 });
 
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
