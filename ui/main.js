@@ -19,9 +19,9 @@ var button = document.getElementById('counter');
        if (response.readystate === XMLHttpResponse.Done) {
            if (response.status === 200) {
                
-              var count = response.responseText();
+              var count11 = response.responseText();
               var span = document.getElementById('count');
-              span.innerHtml = count.toString();
+              span.innerHTML = count11.toString();
                                         }
            
                                                         }
