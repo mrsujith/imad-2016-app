@@ -4,9 +4,35 @@ var counter = 0 ;
 
 button1.onclick = function () {
          counter = counter + 1 ;
-         var span = document.getElementById('count1') ;
-         span.innerHTML = counter.toString();
+         var span1 = document.getElementById('count1') ;
+         span1.innerHTML = counter.toString();
      };
+
+
+var button = document.getElementById('counter');
+
+ button.onclick = function () {
+     
+   var response = new XMLHttpRequest();
+   
+    response.OnReadyStatechange = function () {
+       if (response.readystate === XMLHttpResponse.Done) {
+           if (response.status === 200) {
+               
+              var count = response.responseText();
+              var span = document.getElementById('count');
+              span.innerHtml = count.toString();
+           }
+           
+       }
+       
+   };
+   
+     
+     
+ };
+
+
 
 
  var img = document.getElementById ('madi');
