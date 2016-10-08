@@ -22,7 +22,16 @@
                 
          <div>	
             <button id ="counter">Click me </button> <span id="count">0</span> times
-            <script type="text/javascript" src="/ui/main.js">  </script>
+            <script>
+                
+                var button1 = document.getElementById('counter1');
+                var counter11 = 0 ;
+                button1.onclick = function () {
+         counter11 = counter11 + 1 ;
+         var span1 = document.getElementById('count1') ;
+         span1.innerHTML = counter11.toString();
+     };
+            </script> 
          </div>	
          
            
