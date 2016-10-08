@@ -16,7 +16,7 @@ var button = document.getElementById('counter');
    var response = new XMLHttpRequest();
    
     response.Onreadystatechange = function () {
-       if (response.readyState === XMLHttpResponse.DONE) {
+       if (response.readyState === XMLHttpRequest.DONE) {
            if (response.status === 200) {
                
               var count11 = response.responseText;
