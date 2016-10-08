@@ -33,7 +33,7 @@ var moveright = function () {
          pos = pos + x ;
      img.style.marginLeft = pos + 'px' ;
     }
-    else {    x = - x ;
+    else {  x = - x ;
         pos = pos+ x ;
     }
 };
