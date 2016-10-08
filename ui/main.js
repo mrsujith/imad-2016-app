@@ -24,7 +24,6 @@ var button = document.getElementById('counter');
 
 
 
-
  var img = document.getElementById ('madi');
 var pos = 2;
 var x = 2 ;
