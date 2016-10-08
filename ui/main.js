@@ -15,7 +15,7 @@ var button = document.getElementById('counter');
      
    var response = new XMLHttpRequest();
    
-    response.OnReadyStatechange = function () {
+    response.Onreadystatechange = function () {
        if (response.readyState === XMLHttpResponse.Done) {
            if (response.status === 200) {
                
