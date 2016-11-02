@@ -1,7 +1,6 @@
 var button = document.getElementById('counter');
 
  button.onclick = function () {
-     
    var response = new XMLHttpRequest();
    
     response.onreadystatechange = function () {
@@ -16,14 +15,10 @@ var button = document.getElementById('counter');
        
                                                };
    
-     
-     response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
+          response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
      response.send(null);
                                 };
                                 
-
-
-
  var img = document.getElementById ('madi');
 var pos = 2;
 var x = 2 ;
@@ -40,6 +35,4 @@ var moveright = function () {
 img.onclick = function () {
         var interval = setInterval (moveright,20) ;
 }; 
-
-
 
