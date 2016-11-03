@@ -47,8 +47,7 @@
 
      
  comment.onclick = function () {
-       var submit = document.getElementById('commentinput');
-     var submit1 = submit.value; 
+      
      
    var response = new XMLHttpRequest();
    
@@ -68,6 +67,8 @@
                                         }
                                                          }
                                                 };  
+     var submit = document.getElementById('commentinput');
+     var submit1 = submit.value; 
    
    response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
      response.send(null);
