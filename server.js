@@ -27,6 +27,13 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
+app.get('/sumbit-name/:name' , function (req,res){
+   var name = req.params.name; 
+    res.send();
+});
+
+
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
