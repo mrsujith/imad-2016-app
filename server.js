@@ -29,7 +29,7 @@ app.get('/article-three', function (req, res) {
 
 app.get('/submit-name/:name' , function (req,res){
    var name = req.params.name; 
-    res.send();
+    res.send(name);
 });
 
 
