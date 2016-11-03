@@ -27,7 +27,7 @@ app.get('/article-three', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
-app.get('/sumbit-name/:name' , function (req,res){
+app.get('/submit-name/:name' , function (req,res){
    var name = req.params.name; 
     res.send();
 });
