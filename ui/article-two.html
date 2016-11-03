@@ -34,8 +34,7 @@
      </div>
      <br/>
     <input type="text" id="commentinput" placeholder="name"></input>
-    <input type="text" value= "SSubmit" id="commentpublish"></input>
-    <ul id="orderlist">
+     <ul id="orderlist">
         
         
     </ul>
@@ -56,14 +55,14 @@
        if (response.readyState === XMLHttpRequest.DONE) {
            if (response.status === 200) {
               var comment1 = response.responseText;
-              var span22 = document.getElementById('commentpublish');
-              span22.innerHTML = "comment  "+comment1;
+              var ul = document.getElementById('orderlist');
+              ul.innerHTML = "comment  "+comment1;
                                         }
                                                          }
        
     };  
    
-      for (i=0; )      
+       
      response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submits,true);
      response.send(null);
                                               
