@@ -46,7 +46,6 @@
     response.onreadystatechange = function () {
        if (response.readyState === XMLHttpRequest.DONE) {
            if (response.status === 200) {
-               
               var comment1 = response.responseText;
               var span22 = document.getElementById('commentpublish');
               span22.innerHTML = "comment1";
