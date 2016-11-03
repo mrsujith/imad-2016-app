@@ -56,18 +56,18 @@
        if (response.readyState === XMLHttpRequest.DONE) {
            if (response.status === 200) {
               var comment1 = response.responseText;
-              comment1 =JSON.parse(comment1)
+              comment1 =JSON.parse(comment1) ;
               
               var list = '' ;
               for (i=0; i< comment1.length;i++) {
                   list += <li> + comment1[i] + <li> ;
               }; 
               
-              var ul = document.getElementById('order');
+              var ul = document.getElementById('orderlist');
               ul.innerHTML =list;
                                         }
                                                          }
-           };  
+                                                };  
    
    response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
      response.send(null);
