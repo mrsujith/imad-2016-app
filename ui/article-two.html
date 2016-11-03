@@ -33,19 +33,31 @@
        <button id="comment" >COMMENT</button>
      </div>
      <br/>
-    <input type="text" id="comment1" placeholder="name"></input>
+    <input type="text" id="submit" placeholder="name"></input>
     <span id="commentpublish"></span>
      <script>
+     
+ comment.onclick = function () {
+   var response = new XMLHttpRequest();
+   
+    response.onreadystatechange = function () {
+       if (response.readyState === XMLHttpRequest.DONE) {
+           if (response.status === 200) {
+               
+              var comment1 = response.responseText;
+              var span22 = document.getElementById('commentpublish');
+              span22.innerHTML = comment1;
+                                        }
+                                                         }
+       
+                                               };
+             var submit = document.getElementById('submit');
+   
+          response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/:submit',true);
+     response.send(null);
+                                };
                 
-                var comment1 = document.getElementById('comment1');
-                var comment = document.getElementById('comment');
-             
-              comment.onclick = function () {
-         
-         var span22 = document.getElementById('commentpublish') ;
-        
-         span22.innerHTML = (comment1);
-     };
+                   };
             </script> 
     
  </div>
