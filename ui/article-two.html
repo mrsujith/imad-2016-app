@@ -56,7 +56,11 @@
            if (response.status === 200) {
               var comment1 = response.responseText;
               var ul = document.getElementById('orderlist');
-              ul.innerHTML = "comment  "+comment1;
+              var list ="",
+              for (i=0; i< submits.length;i++) {
+                  list += <li>  submits[i] <li> ;
+              }
+              ul.innerHTML =list;
                                         }
                                                          }
        
