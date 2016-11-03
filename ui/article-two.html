@@ -33,9 +33,13 @@
        <button id="comment" >COMMENT</button>
      </div>
      <br/>
-    <input type="text" id="submit" placeholder="name"></input>
+    <input type="text" id="commentinput" placeholder="name"></input>
     <span id="commentpublish"></span>
+    
      <script>
+     
+     var submit = document.getElementById('commentinput');
+     var submit1 = submit.value;
      
  comment.onclick = function () {
    var response = new XMLHttpRequest();
@@ -51,9 +55,8 @@
                                                          }
        
                                                };
-             var submit = document.getElementById('submit');
-   
-          response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/:submit',true);
+            
+     response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/' + submit1,true);
      response.send(null);
                                 };
                 
