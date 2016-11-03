@@ -34,6 +34,7 @@
      </div>
      <br/>
     <input type="text" id="commentinput" placeholder="name"></input>
+     <span id = "order">a</span>
      <ul id="orderlist">
         
         
@@ -43,29 +44,31 @@
      
      var comment = document.getElementById('comment');
      
-     var submits = [];
+
      
  comment.onclick = function () {
        var submit = document.getElementById('commentinput');
      var submit1 = submit.value; 
-     submits.push(submit1);
+     
    var response = new XMLHttpRequest();
    
     response.onreadystatechange = function () {
        if (response.readyState === XMLHttpRequest.DONE) {
            if (response.status === 200) {
               var comment1 = response.responseText;
-              var ul = document.getElementById('orderlist');
-              var list = '' ;
+              comment1 =JSON.parse(comment1)
+              var ul = document.getElementById('order');
+            /*  var list = '' ;
               for (i=0; i< submits.length;i++) {
                   list += <li> + submits[i] + <li> ;
-              };
+              }; */
+              
               ul.innerHTML =comment1;
                                         }
                                                          }
            };  
    
-   response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submits,true);
+   response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
      response.send(null);
                                      };
                 
