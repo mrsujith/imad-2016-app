@@ -40,9 +40,12 @@
      
      var comment = document.getElementById('comment');
      
+     var submits = [];
+     
  comment.onclick = function () {
        var submit = document.getElementById('commentinput');
      var submit1 = submit.value; 
+     submits.push(submit1);
    var response = new XMLHttpRequest();
    
     response.onreadystatechange = function () {
@@ -57,7 +60,7 @@
     };  
    
             
-     response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
+     response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submits,true);
      response.send(null);
                                               
                                      };
