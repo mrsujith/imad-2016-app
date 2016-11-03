@@ -41,12 +41,12 @@
      var comment = document.getElementById('comment');
      
  comment.onclick = function () {
-   var response1 = new XMLHttpRequest();
+   var response = new XMLHttpRequest();
    
-    response1.onreadystatechange = function () {
-       if (response1.readyState === XMLHttpRequest.DONE) {
-           if (response1.status === 200) {
-              var comment1 = response1.responseText;
+    response.onreadystatechange = function () {
+       if (response.readyState === XMLHttpRequest.DONE) {
+           if (response.status === 200) {
+              var comment1 = response.responseText;
               var span22 = document.getElementById('commentpublish');
               span22.innerHTML = "comment1";
                                         }
@@ -56,8 +56,8 @@
       var submit = document.getElementById('commentinput');
      var submit1 = submit.value;
             
-     response1.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/suji',true);
-     response1.send(null);
+     response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/suji',true);
+     response.send(null);
                                                };  
                                      };
                 
