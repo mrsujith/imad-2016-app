@@ -57,13 +57,14 @@
            if (response.status === 200) {
               var comment1 = response.responseText;
               comment1 =JSON.parse(comment1)
-              var ul = document.getElementById('order');
-            /*  var list = '' ;
-              for (i=0; i< submits.length;i++) {
-                  list += <li> + submits[i] + <li> ;
-              }; */
               
-              ul.innerHTML =comment1;
+              var list = '' ;
+              for (i=0; i< comment1.length;i++) {
+                  list += <li> + comment1[i] + <li> ;
+              }; 
+              
+              var ul = document.getElementById('order');
+              ul.innerHTML =list;
                                         }
                                                          }
            };  
