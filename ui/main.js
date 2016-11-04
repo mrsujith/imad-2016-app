@@ -1,25 +1,4 @@
-var button = document.getElementById('counter');
-
- button.onclick = function () {
-   var response = new XMLHttpRequest();
-   
-    response.onreadystatechange = function () {
-       if (response.readyState === XMLHttpRequest.DONE) {
-           if (response.status === 200) {
-               
-              var count11 = response.responseText;
-              var span = document.getElementById('count');
-              span.innerHTML = count11.toString();
-                                        }
-                                                         }
-       
-                                               };
-   
-          response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
-     response.send(null);
-                                };
-                                
-          var comment123 = [] ;
+var comment123 = [] ;
           var comment = document.getElementById('comment');
           
              comment.onclick = function () {
@@ -46,7 +25,30 @@ var button = document.getElementById('counter');
      response.send(null);
      
          };
-                                      
+                           
+
+var button = document.getElementById('counter');
+
+ button.onclick = function () {
+   var response = new XMLHttpRequest();
+   
+    response.onreadystatechange = function () {
+       if (response.readyState === XMLHttpRequest.DONE) {
+           if (response.status === 200) {
+               
+              var count11 = response.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = count11.toString();
+                                        }
+                                                         }
+       
+                                               };
+   
+          response.open('GET','http://mrsujith.imad.hasura-app.io/counter',true);
+     response.send(null);
+                                };
+                                
+                     
                                 
  var img = document.getElementById ('madi');
 var pos = 2;
