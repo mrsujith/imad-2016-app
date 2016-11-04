@@ -69,11 +69,12 @@
      response.send(null);
      
      
-     
        var ul = document.getElementById('orderlist');
-            for (i=0; i< comment123.length;i++) {
-                 ul.innerHTML =JSON.stringify(comment123[i]); 
-              };                                 };
+           var list = '' ;
+              for (i=0; i< comment123.length;i++) {
+                  list += <li> + comment123[i] + <li> ;
+              }; 
+              ul.innerHTML = list  };
                      
                  </script> 
    </div>
