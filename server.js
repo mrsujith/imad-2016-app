@@ -24,7 +24,6 @@ app.get('/submit-name/:name' , function (req,res){
     res.send(names);
 });
 
-
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
