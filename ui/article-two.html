@@ -34,7 +34,7 @@
      </div>
      <br/>
     <input type="text" id="commentinput" placeholder="name"></input>
-     <button id="listbutton">ListAll</button>
+  
      <ul id="orderlist">
          
      </ul>
@@ -53,7 +53,14 @@
            if (response.status === 200) {
               var comment1 = response.responseText;
               comment123.push(comment1);
-                                                }
+              
+               var list = '' ;
+              for (i=0; i< comment123.length;i++) {
+                  list += <li> + comment123[i] + <li> ;
+              }; 
+                         
+              var ul = document.getElementById('orderlist');
+              ul.innerHTML =comment123;                                   }
                                                          }
                                                 };  
      var submit = document.getElementById('commentinput');
@@ -62,15 +69,13 @@
    response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
      response.send(null);
                                      };
-                 var listall = document.getElementById('listbutton');
-              listall.onclick = function () {     
+                     
                    var list = '' ;
               for (i=0; i< comment123.length;i++) {
                   list += <li> + comment123[i] + <li> ;
               }; 
                           
-              var ul = document.getElementById('orderlist');
-              ul.innerHTML =comment123;  };
+            
                                      
                 </script> 
    </div>
