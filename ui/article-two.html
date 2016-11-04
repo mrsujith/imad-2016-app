@@ -37,10 +37,8 @@
      <span id = "order">a</span>
     
      <script>
-     
-     var comment = document.getElementById('comment');
-     
-      comment.onclick = function () {
+          var comment = document.getElementById('comment');
+          comment.onclick = function () {
       
      var comment123 = [] ;
    var response = new XMLHttpRequest();
@@ -58,7 +56,7 @@
               }; */
               
               var ul = document.getElementById('order');
-              ul.innerHTML =comment123;
+              ul.innerHTML =JSON.stringfy(comment123);
                                         }
                                                          }
                                                 };  
