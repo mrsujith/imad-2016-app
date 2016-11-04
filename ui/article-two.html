@@ -53,7 +53,12 @@
            if (response.status === 200) {
               var comment1 = response.responseText;
               comment123.push(comment1);
-                                         }
+                 var list = '' ;
+           for (i=0;i < comment123.length ; i++) {
+                  list += "Comment" + i + "<li>" + comment123[i] ;
+           };
+          var ul = document.getElementById('orderlist');
+          ul.innerHTML = list                         }
                                                          }
                                                 };  
      var submit = document.getElementById('commentinput');
@@ -62,12 +67,7 @@
    response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
      response.send(null);
      
-      var list = '' ;
-           for (i=0;i < comment123.length ; i++) {
-                  list += "Comment" + i + "<li>" + comment123[i] ;
-           };
-          var ul = document.getElementById('orderlist');
-          ul.innerHTML = list    };
+         };
                      
                  </script> 
    </div>
