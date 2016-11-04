@@ -34,7 +34,7 @@
      </div>
      <br/>
     <input type="text" id="commentinput" placeholder="name"></input>
-     <input id = "order">a</input>
+     <span id = "order">a</span>
     
      <script>
      
@@ -44,8 +44,7 @@
            
           comment.onclick = function () {
       
-     var comment123 = [] ;
-   var response = new XMLHttpRequest();
+       var response = new XMLHttpRequest();
    
     response.onreadystatechange = function () {
        if (response.readyState === XMLHttpRequest.DONE) {
