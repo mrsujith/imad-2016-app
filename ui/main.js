@@ -13,7 +13,7 @@ var comment123 = [] ;
                  
                  var list = '' ; 
            for (i=0;i < comment123.length ; i++) {
-       list += "<li>" +  " Comment " + (i+1) + "  . " + comment123[i] + "..." ;
+       list += "<li>" +  " Comment " + "  . " + comment123[i] + "..." ;
                                                  }
            
          var ul = document.getElementById('orderlist');
