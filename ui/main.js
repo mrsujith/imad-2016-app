@@ -19,10 +19,9 @@ var comment123 = [] ;
          var ul = document.getElementById('orderlist');
           ul.innerHTML = list            }
                                                 }        }; 
-     var submit = document.getElementById('commentinput');
-     var submit1 = submit.value; 
-   
-   response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit1,true);
+     var submit = document.getElementById('commentinput').value;
+     
+   response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit,true);
      response.send(null);
      
          };
