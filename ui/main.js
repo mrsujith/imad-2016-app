@@ -16,11 +16,8 @@ var comment123 = [] ;
        list += "<li>" +  "comment " + "  . " + comment123[i] + "..." ;
                                                  }
            
-        /* var ul = document.getElementById('orderlist');
-          ul.innerHTML = list    */
-          
-               document.getElemenById("orderlist").appendChild(list);
-           }
+       var ul = document.getElementById('orderlist');
+          ul.innerHTML = list    }
                                                 }        }; 
      var submit = document.getElementById('commentinput').value;
      
