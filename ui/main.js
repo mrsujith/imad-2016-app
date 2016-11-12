@@ -14,11 +14,11 @@ var comment123 = [] ;
                  var list = '' ; 
            for (i=0;i < comment123.length ; i++) {
        list += "<li>" +  " Comment " + (i+1) + "  . " + comment123[i] + "..." ;
-           }
+                                                 }
            
          var ul = document.getElementById('orderlist');
-          ul.innerHTML = list ;         }
-                                                } 
+          ul.innerHTML = list            }
+                                                }        }; 
      var submit = document.getElementById('commentinput');
      var submit1 = submit.value; 
    
