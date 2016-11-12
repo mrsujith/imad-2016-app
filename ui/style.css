@@ -32,3 +32,13 @@ body {
      margin-right: 70px;
 }
 
+    .compact {
+            margin-left : 50px;
+            margin-right : 80px;
+                    }
+          .text-size {
+            font-size :120%;
+        }
+        .date-size {
+            font-weight: bold; }
+            
