@@ -1,7 +1,7 @@
       var img = document.getElementById ('madi');
-var pos = 2;
-var x = 2 ;
-var moveright = function () {
+      var pos = 2;
+      var x = 2 ;
+      var moveright = function () {
     if ( pos < 400 && -400 < pos ) {
          pos = pos + x ;
      img.style.marginLeft = pos + 'px' ;
