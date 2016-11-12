@@ -1,7 +1,9 @@
 var comment123 = [] ;
-          var comment = document.getElementById('comment');
+        /*  var comment = document.getElementById('comment');
         
-             comment.onclick = function () {
+             comment.onclick */
+             
+              function comment() {
       
        var response = new XMLHttpRequest();
    
@@ -24,7 +26,7 @@ var comment123 = [] ;
    response.open('GET','http://mrsujith.imad.hasura-app.io/submit-name/'+ submit,true);
      response.send(null);
      
-         };
+         }
                            
         
                                 
