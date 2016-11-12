@@ -27,10 +27,7 @@ var comment123 = [] ;
      
          };
                            
-
-
-                                
-                     
+        
                                 
  var img = document.getElementById ('madi');
 var pos = 2;
