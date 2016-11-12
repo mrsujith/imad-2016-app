@@ -1,17 +1,14 @@
 var comment123 = [] ;
-        /*  var comment = document.getElementById('comment');
-        
-             comment.onclick */
-             
-              function comment() {
+       
+       function comment() {
       
-       var response = new XMLHttpRequest();
+          var response = new XMLHttpRequest();
    
-    response.onreadystatechange = function () {
-       if (response.readyState === XMLHttpRequest.DONE) {
-           if (response.status === 200) {
-              var comment1 = response.responseText;
-                 comment123.push(comment1);
+          response.onreadystatechange = function () {
+             if (response.readyState === XMLHttpRequest.DONE) {
+                  if (response.status === 200) {
+                       var comment1 = response.responseText;
+                       comment123.push(comment1);
                  
                  var list = '' ; 
            for (i=0;i < comment123.length ; i++) {
