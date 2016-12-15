@@ -20,7 +20,7 @@ app.get('/article-one' , function (req, res) {
 });
 
 app.get('/submit-name/:name' , function (req,res){
-   var names = req.params.name;
+   var names  = req.params.name;
     res.send(names);
 });
 
